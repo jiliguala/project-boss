@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const server = require('@jlgl/orochi');
+
+server.init({
+    appDir: __dirname
+}).then(function() {
+    server.boot();
+}).catch(function(err) {
+    global.console.error(err);
+    process.exit(1);
+});

@@ -1,0 +1,15 @@
+#[NODEJS过滤列表]
+.svn/
+.idea
+.git
+*.log
+.gitignore
+Dockerfile
+.gitlab-ci.yml
+.eslintrc.js
+test/
+coverage/
+README.md
+
+#[自定义过滤列表]
+app/build/

@@ -1,0 +1,58 @@
+.app-pdf {
+    margin: 0;
+    background-color: rgb(82, 86, 89);
+    font-family: Segoe UI, Tahoma, sans-serif;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+
+        &-document {
+            margin: 1em 0;
+
+            .ReactPDF {
+                &__Document {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &__Page {
+                    max-width: calc(~"100% - 2em");
+                    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+                    margin: 1em;
+
+                    canvas {
+                        max-width: 100%;
+                        height: auto !important;
+                    }
+                    &__textContent {
+                        display: none;
+                    }
+                }
+
+                &__Loader, &__Error, &__NoData {
+                    padding: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+// 文件预览
+.app-file-preview-image {
+    width: 100%;
+    max-height: 400px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    img{
+        max-width: 380px;
+        max-height: 380px;
+        width: auto;
+        height: auto;
+    }
+}

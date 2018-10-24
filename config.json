@@ -1,0 +1,29 @@
+{
+    "mock": false,
+    "staticURI": "",
+    "maxPageSize": 500,
+    "pageSize": 10,
+    "baseURI": "test.jlgldev.com",
+    "uploadTokenURI": "http://rms.test.jlgldev.com/resource",
+    "bossrURI": "http://djy-boss.djy.test.jlgldev.com",
+    "auditURI": "http://127.0.0.1:3001",
+    "serviceCenterUrl": "zookeeper://172.26.5.60:2181",
+    "addtionalStaticDir": "app/public/static-local/",
+    "dubboVersionInfo": "",
+    "rapProjectId": "14",
+    "log": {
+        "systemId": 8,
+        "businessId": 50,
+        "pageId": 14,
+        "pageSize": 20
+    },
+    "boss": {
+        "open": false,
+        "useSSO": true,
+        "appId": "13800",
+        "appKey": "94bf5fa495efce",
+        "appName": "nodejs-djy-name-boss",
+        "filterList": ["/user/login"]
+    },
+    "port": 3001
+}

@@ -1,0 +1,14 @@
+# files
+.git
+*.log
+*.zip
+package-lock.json
+
+
+# folders
+node_modules/
+logs/
+coverage/
+app/public/
+.idea/
+.vscode/
